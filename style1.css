@@ -1,0 +1,145 @@
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wraper{
+    padding: 50px 25px 0;
+    max-width: 668px;
+    width: 100%;
+    margin: auto;
+}
+.wraper ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:  url("Picture/veee.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+}
+.wraper .headline{
+    text-align: center;
+    padding-bottom: 48px;
+}
+.wraper .headline h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 52px;
+}
+.wraper form{
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+.wraper .form-group{
+ margin-bottom: 15px;
+}
+.wraper .form-group input{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding: 5px 10px;
+    height: 48px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid white;
+    box-shadow: none;
+    width: 100%;
+}
+.wraper .form-group input :focus{
+    outline: none;
+}
+.wraper .form-group input ::placeholder{
+    color: black;
+    font-weight: 4  00;
+    font-size: 14px;
+}
+.wraper .btn{
+    width: 100%;
+    margin: 15px 0 30px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 12px 29px;
+    height: 48px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+        
+}    
+.wraper .btn :focus{
+   outline: none;
+}
+.wraper .account-exist{
+    color: black;
+    border-top: 1px solid;
+    padding-top: 20px;
+    text-align: center;
+}
+.wraper .account-exist a{
+    color: black;
+}
+.wraper .forget-password{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.wraper .forget-password a{
+    color: black;
+}
+.wraper .forget-password .check-box{
+    font-size: 20px;
+    color: black;
+}
+.signup .inActive{
+    display:none;
+}
+.signin{
+    display:none;
+}
+.signin.active{
+    display: block;
+}
+@media(max-width:1500px){
+    .wraper::before{
+        left: -25%;
+        min-height: 60vh;
+        height: 500px;
+    }
+}
+@media(max-width:767px){
+    .wraper{
+        max-width: 550px;
+    }
+    .wraper .headline h1{
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
